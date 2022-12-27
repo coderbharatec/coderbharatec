@@ -1,0 +1,332 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+nav{
+    display: flex;
+    height: 80px;
+    width: 100%;
+    background: #0d0066;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px 0 100px;
+    flex-wrap: wrap;
+}
+nav .logo{
+  color: #fff;
+  font-size: 35px;
+  font-weight: 600;
+}
+nav ul{
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+nav ul li{
+  margin: 0 5px;
+}
+nav ul li a{
+  color: #f2f2f2;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 8px 15px;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+ .back{
+height: 300px;
+width: 100%;
+ background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.4)),url("great-programmer.jpg");
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+overflow: hidden;
+animation-name: prince;
+animation-iteration-count: infinite;
+animation-delay: 8s;
+animation-direction: alternate;
+animation-duration: 20s;
+animation-direction: reverse;
+} 
+@keyframes prince  {
+  0%{
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.4)),url("great-programmer.jpg");
+    
+  }
+20%{
+
+  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.4)),url("607b1df44a2ff5fefa241045_howtobecomearoboticsengineer.png");
+
+
+}
+
+40%{
+  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.4)),url("istockphoto-941796726-612x612.jpg");
+
+}
+60%{
+
+  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.4)),url("STEM_Careers_Civil_Engineering-scaled.jpg");
+
+}
+
+100%{
+  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.4)),url("great-programmer.jpg");
+
+}
+  }
+
+
+
+  
+
+
+.section-first{
+    height: 48rem;
+    width: 100%;
+}
+.fab.fa-instagram:hover{
+color: rgb(246, 2, 71);
+}
+.fab.fa-linkedin:hover{
+  color: rgb(93, 93, 245);
+}
+.fab.fa-twitter:hover{
+  color: rgb(98, 98, 255);
+}
+.fab.fa-youtube:hover{
+  color: red;
+}
+
+.fab.fa-instagram{
+  color: white;
+}
+.fab.fab.fa-linkedin{
+  color: white;
+}
+.fab.fa-twitter{
+  color: white;
+}
+.fab.fa-youtube{
+  color: white;
+}
+
+
+nav ul li a.active,
+nav ul li a:hover{
+    color: #111;
+    background: #cdff35;
+}
+nav .menu-btn i{
+  color: #fff;
+  font-size: 22px;
+  cursor: pointer;
+  display: none;
+}
+input[type="checkbox"]{
+  display: none;
+}
+@media (max-width: 1000px){
+  nav{
+    padding: 0 40px 0 50px;
+  }
+}
+@media (max-width: 920px) {
+  nav .menu-btn i{
+    display: block;
+  }
+  #click:checked ~ .menu-btn i:before{
+    content: "\f00d";
+  }
+  nav ul{
+    position: fixed;
+    top: 80px;
+    left: -100%;
+    background: #111;
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    display: block;
+    transition: all 0.3s ease;
+  }
+  #click:checked ~ ul{
+    left: 0;
+  }
+  nav ul li{
+    width: 100%;
+    margin: 40px 0;
+  }
+  nav ul li a{
+    width: 100%;
+    margin-left: -100%;
+    display: block;
+    font-size: 20px;
+    transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  #click:checked ~ ul li a{
+    margin-left: 0px;
+  }
+  nav ul li a.active,
+  nav ul li a:hover{
+    background: none;
+    color: cyan;
+  }
+}
+.content{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: -1;
+  width: 100%;
+  padding: 0 30px;
+  color: #1b1b1b;
+}
+.content div{
+  font-size: 40px;
+  font-weight: 700;
+ 
+}
+
+
+
+.middle-box{
+    height:84rem;
+    background-color: #dbdbdbe3;
+    width: 100%;
+    text-align: center;
+    font-size: 32px;
+    font-weight: 600;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-top: 52px;
+}
+
+
+.middle-box img{
+    width: 180px;
+    border-radius: 132px;
+    border: 3px solid;
+    margin-top: 12px;
+}
+.about-me{
+    font-size: 20px ;
+    font-weight: 300;
+}
+.skill{
+    color: black;
+}
+
+.middle-down{
+    height: 20rem;
+    background-color: #615f5fe3;
+    width: 100%;
+    text-align: center;
+    font-size: 32px;
+    font-weight: 600;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(236, 234, 234);
+}
+.list{
+    text-align: center;
+    font-size: 25px;
+    font-weight: 300;
+    margin-left: 12px;
+}
+ li.webdeve{
+    color: #cbfd18;
+    font-size: 25px;
+    font-weight: 400;
+}
+.list :hover{
+    color: rgb(54, 11, 49);
+    display: inline-block;
+}
+
+.middle-third{
+   
+    height: 30rem;
+    background-color: #000000e3;
+    width: 100%;
+    text-align: center;
+    font-size: 32px;
+    font-weight: 600;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+
+}
+
+
+
+
+#text{
+    border-radius: 5px;
+    width: 20rem;
+    padding: 0.3rem 1rem;
+    font-size: 1rem;
+}
+.btn{
+    background-color: rgb(16, 77, 246);
+    color: white;
+    font-weight: 600;
+    font-size: 23px;
+    cursor: pointer;
+}
+.btn a{
+  text-decoration: none;
+  color: white;
+}
+.btn:hover{
+    background-color: rgb(90, 13, 13);
+    transition-property: all;
+    transition-duration: 0.5s;
+    border: transparent;
+   
+}
+
+.notice{
+    font-size: 15px;
+    font-weight: 100;
+    margin-top: 2rem;
+    
+}
+
+.list1{
+    font-size: 15px;
+    text-align: center;
+    /* margin-left: 103px; */
+    font-weight: 100;
+    list-style: none;
+  
+}
+
+.list1 a{
+    text-decoration: none;
+    color: white;
+}
+
+.policy {
+    margin-top: 1rem;
+  display: inline-block;
+ 
+    
+}
+.hr{
+ 
+    border: 1px solid white;
+    margin-top: 10px;
+}
+.policy .list1:hover{
+    color: red;
+    cursor: pointer;
+}
+
+.content{
+    margin-top: 12rem;
+}
